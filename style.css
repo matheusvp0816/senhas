@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root{
-    --branco: rgb(150, 6, 6);
+    --branco: rgb(175, 175, 175);
     --cor-de-fundo: #000000;
     --fundo-senha: #000000;
     --fundo-texto: #000000;
@@ -131,12 +131,12 @@ body{
 }
 
 .media{
-    background-color: #FAF408;
+    background-color: #dbd803;
     width: 50%;
 }
 
 .forte{
-    background-color: #00FF85;
+    background-color: #12a05bff;
     width: 100%;
 }
 

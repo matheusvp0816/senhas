@@ -1,3 +1,4 @@
+const forcaSenha = document.querySelector('.forca')
 const numeroSenha = document.querySelector('.parametro-senha__texto');
 let tamanhoSenha = 12;
 numeroSenha.textContent = tamanhoSenha;
@@ -59,4 +60,18 @@ function geraSenha() {
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
+    classificasenha ();
+}
+
+function classificasenha(){
+    forcaSenha.classList.remove ('fraca' , 'media' , 'forte');
+   if (tamanhoSenha > 11){
+    forcaSenha.classList.add ('forte');
+   }
+    else if (tamanhoSenha > 5 && tamanhoSenha <= 11){
+        forcaSenha.classList.add ('media');
+    }
+        else if (tamanhoSenha <= 5){
+            forcaSenha.classList.add('fraca');
+   }    
 }
